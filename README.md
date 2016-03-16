@@ -1,18 +1,24 @@
-# Polar Bear
-An open source minimal theme for Jekyll, ideal for blogging.
+##说明
 
-View the demo at http://diezcami.github.io/polar-bear-theme
+2016-02-29  更新 _config.yml 可用
 
-## Contribute
-Please submit **open issues** for bugs or TBA features that haven't been documented yet! Feel free to submit pull requests for any existing issues.
+此博客 fork 自 [Azeril](http://azeril.me/)，感谢。
 
-## License
-The MIT License (MIT)
+##读立写生
 
-Copyright (c) 2015 Camille Diez
+我是陈素封，博客：[cnfeat.com](cnfeat.com)
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+每天千字践行者，践行时间：2014年02月10日至2014年02月23日，感谢这段经历，让我成为了现在的我。
 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+现在研习 **认知写作学** 。
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+##坚信
+
+
+- 元认知乃一切之源
+- 学苟知本，六经皆我注脚 
+- 一切技能皆可习得，包括写作
+- 「持续」并不是坚持，写就是最好的回报
+
+
+
