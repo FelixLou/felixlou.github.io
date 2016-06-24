@@ -1,13 +1,13 @@
 # Site settings
 title: 沐风
 header-img: "img/green.jpg"
-tagline: "cn"  
-description: "I am what I read, watch, write and care about"  
+tagline: "cn"
+description: "I am what I read, write and care about"
 baseurl: ""
 url: ""  
 
 # About/contact
-owner: 
+owner:
   name: "Felix"
   email: jiabinlu325204@gmail.com
   bio: ""
@@ -16,16 +16,16 @@ owner:
 gavatar: http://dreamofbook.qiniudn.com/Az..png
 favicon: img/favicon.png
 
-douban_username:  
-twitter_username: 
-github_username: 
-facebook_username: 
-weibo_username: 
-zhihu_username: 
+douban_username:
+twitter_username:
+github_username:
+facebook_username:
+weibo_username:
+zhihu_username:
 
-# Build settings  
-# use Github Flavored Markdown !important  
-# document: http://jekyllrb.com/docs/configuration/#kramdown  
+# Build settings
+# use Github Flavored Markdown !important
+# document: http://jekyllrb.com/docs/configuration/#kramdown
 markdown: kramdown
 highlighter: rouge
 permalink: pretty
@@ -38,7 +38,7 @@ timezone: Asia/Beijing
 # Defaults for posts
 defaults:
   -
-    scope: 
+    scope:
       path: ""
       type: "posts"
     values:
@@ -46,16 +46,16 @@ defaults:
       author: "Felix"
       header-img: "img/green.jpg" # We don't want posts without a header image, that whould mean white on white
 
-# Comments 
+# Comments
 comments :
   provider : duoshuo
   duoshuo :
-    short_name : 
+    short_name :
   disqus :
-      short_name : 
+      short_name :
 
 # Analytics and webmaster tools stuff goes here
-google_analytics: 
+google_analytics:
 google_verify:
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:
