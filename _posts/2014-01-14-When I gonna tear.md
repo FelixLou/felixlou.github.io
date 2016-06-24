@@ -3,7 +3,7 @@ layout: post
 title: 我什么时候掉眼泪
 date: 2016-06-22
 categories: blog
-tags: [感悟,情感]
+tags: [感悟]
 description: 写不是义务，写本身就是写的报酬。
 ---
 
@@ -80,3 +80,5 @@ description: 写不是义务，写本身就是写的报酬。
 我什么时候掉眼泪
 
 当眼泪自己流出的时候
+
+a13861的博客

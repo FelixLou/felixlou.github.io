@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "About"
-description: "Something about me"
+description: "I am what I read, watch, write and care about"
 header-img: "img/green.jpg"
 ---
 
@@ -25,6 +25,7 @@ header-img: "img/green.jpg"
 
 
 ###我喜欢的人
+
 Elon Reeve Musk
 Mark Elliot Zuckerberg
 张小龙
@@ -32,6 +33,7 @@ Mark Elliot Zuckerberg
 姜文
 
 ###我喜欢的作家
+
 吴军《数学之美》《浪潮之巅》《文明之光》《硅谷之谜》《大学之路》
 
 刘瑜 《送你一颗子弹》《观念的水位》《民主的细节》
@@ -69,6 +71,7 @@ Mark Elliot Zuckerberg
 安妮宝贝 《告别薇安》《八月未央》《彼岸花》《二三事》
 
 ###我喜欢的书
+
 《乔布斯传》
 《苏菲的世界》
 《影响力》
@@ -82,10 +85,12 @@ Mark Elliot Zuckerberg
 《动物庄园》
 
 ###读的其他书
+
 《无声告白》
 
 
 ###我喜欢的电视剧
+
 《Friends》
 《Shameless》
 《The BigBang Theory》
@@ -96,11 +101,13 @@ Mark Elliot Zuckerberg
 《爱情公寓》
 
 ###我喜欢的电影
+
 《肖申克的救赎》
 《幸福终点站》
 《被嫌弃的松子的一生》
 
 ###我喜欢的节目
+
 《罗辑思维》
 《晓松奇谈》
 《晓说》
@@ -117,12 +124,14 @@ Mark Elliot Zuckerberg
 
 
 ###我喜欢的网站
-www.google.com
-www.Amazon.com
-www.youtube.com
-www.github.com
-www.zhihu.com
-www.waitbutwhy.com
+
+[谷歌](www.google.com)
+[亚马逊](www.Amazon.com)
+[Youtube](www.youtube.com)
+[Github](www.github.com)
+[知乎](www.zhihu.com)
+[waitbutwhy](www.waitbutwhy.com)
+
 
 
 ###联系

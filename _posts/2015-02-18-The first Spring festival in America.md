@@ -3,7 +3,7 @@ layout: post
 title: 第一个异国的春节
 date: 2015-02-18
 categories: blog
-tags: [写作,思考]
+tags: [感悟]
 description: 写不是义务，写本身就是写的报酬。
 ---
 
