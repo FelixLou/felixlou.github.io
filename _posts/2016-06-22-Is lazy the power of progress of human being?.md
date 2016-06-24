@@ -3,7 +3,7 @@ layout: post
 title: 懒是进步的源泉吗？
 date: 2016-06-22
 categories: blog
-tags: [写作,思考]
+tags: [思考]
 description: 写不是义务，写本身就是写的报酬。
 ---
 

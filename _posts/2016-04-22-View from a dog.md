@@ -3,11 +3,11 @@ layout: post
 title: 狗眼看世界
 date: 2016-04-04
 categories: blog
-tags: [思考，家庭]
+tags: [思考,家庭]
 description: 写不是义务，写本身就是写的报酬。
 ---
 
-今天刷微博，看到了这个[视频]（http://www.miaopai.com/show/PtyO7q8Y7Tgf72sNFllZqA__.htm）
+今天刷微博，看到了这个[视频](http://www.miaopai.com/show/PtyO7q8Y7Tgf72sNFllZqA__.htm)
 
 这个视频展现了一只狗看到的世界，各种奇形怪状的物品、并不抱有善意的猛兽（人）以及更多它并不能理解的东西和这只狗的惊恐，希望借此呼吁大家关爱动物，不要随意丢弃他们。因为它可能只是你的一条狗，你却是他生命的全部。无数的小说，电影，真实的故事也展示了狗的忠诚，如何舍命救主，如何在主人死后，绝食而死。我还记得有一个视频展示了你不在家的时间你的狗狗都在干嘛？[Youtube](https://www.youtube.com/watch?v=PXn3v80fl50) [腾讯视频](http://v.qq.com/x/cover/e699qfeo2b6txwn.html?vid=s0141r77v9m) 整体上就是在等你，听到一点声音就赶紧跑到门口，不是你，有失落的回去，重复以此，直到你回来，帮你叼来拖鞋，在你身边撒欢。看完这个视频，我对养狗这事想想就充满愧疚感。
 

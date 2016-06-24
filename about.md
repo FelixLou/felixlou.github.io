@@ -5,11 +5,6 @@ description: "I am what I read, watch, write and care about"
 header-img: "img/green.jpg"
 ---
 
-
-<center>
-    <p><img src="http://7xlfkx.com1.z0.glb.clouddn.com/white2.jpg" align="center"></p>
-</center>
-
 我是卢佳斌,一个Amazon西雅图的程序员。
 
 爱好广泛，对世界充满好奇。
@@ -23,16 +18,29 @@ header-img: "img/green.jpg"
 
 ###最近做的事
 
+###我关心的事情
+IT
+软件
+运动
+教育
+慈善
 
 ###我喜欢的人
 
 Elon Reeve Musk
+
 Mark Elliot Zuckerberg
+
+Quentin Jerome Tarantino
+
 张小龙
+
 郭德纲&&于谦
+
 姜文
 
-###我喜欢的作家
+
+###我喜欢的作家及其作品
 
 吴军《数学之美》《浪潮之巅》《文明之光》《硅谷之谜》《大学之路》
 
@@ -42,7 +50,7 @@ Mark Elliot Zuckerberg
 
 吴晓波 《大败局》
 
-马伯庸 《古董局中局》《三国机密》《风起陇西》《末日焚书》
+马伯庸 《古董局中局》（共四部）《三国机密》《风起陇西》
 
 贾平凹 《白夜》《废都》《高兴》《怀念狼》《天狗》
 
@@ -70,6 +78,8 @@ Mark Elliot Zuckerberg
 
 安妮宝贝 《告别薇安》《八月未央》《彼岸花》《二三事》
 
+燕垒生 《天行健》
+
 ###我喜欢的书
 
 《乔布斯传》
@@ -77,9 +87,11 @@ Mark Elliot Zuckerberg
 《影响力》
 《美国种族简史》
 《近距离看美国》三部曲（《历史深处的忧虑》《总统是靠不住的》《我也有一个梦想》）
+《看见》
 《穆斯林的葬礼》
 《平凡的世界》
 《白鹿原》
+《天才在左，疯子在右》
 《小顾聊绘画》
 《穷爸爸，富爸爸》
 《动物庄园》
@@ -87,6 +99,8 @@ Mark Elliot Zuckerberg
 ###读的其他书
 
 《无声告白》
+《虚实之间》
+
 
 
 ###我喜欢的电视剧
@@ -95,16 +109,41 @@ Mark Elliot Zuckerberg
 《Shameless》
 《The BigBang Theory》
 《Modern Family》
-《Legal High》
+《Legal High》（日剧）
 《家有儿女》
 《武林外传》
 《爱情公寓》
 
 ###我喜欢的电影
 
-《肖申克的救赎》
-《幸福终点站》
-《被嫌弃的松子的一生》
+[豆瓣电影](https://movie.douban.com/top250)
+前60名中未看的:
+海上钢琴师
+机器人总动员
+盗梦空间
+放牛班的春天
+忠犬八公的故事
+龙猫
+天堂电影院
+触不可及
+指环王
+天空之城
+怦然心动
+飞屋环游记
+海豚湾
+飞越疯人院
+窃听风暴
+熔炉
+闻香识女人
+哈尔的移动城堡
+情书
+死亡诗社
+剪刀手爱德华
+钢琴家
+致命魔术
+星际穿越
+
+
 
 ###我喜欢的节目
 
@@ -130,7 +169,7 @@ Mark Elliot Zuckerberg
 [Youtube](www.youtube.com)
 [Github](www.github.com)
 [知乎](www.zhihu.com)
-[waitbutwhy](www.waitbutwhy.com)
+[Waitbutwhy](www.waitbutwhy.com)
 
 
 
@@ -138,7 +177,7 @@ Mark Elliot Zuckerberg
 
 - [Linkedin](https://www.linkedin.com/in/jiabinlu)
 
-- 邮箱：jiabinlu325204@gmail.com
+- [邮箱](jiabinlu325204@gmail.com)
 
 
 
