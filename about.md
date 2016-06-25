@@ -5,7 +5,7 @@ description: "I am what I read, watch, write and care about"
 header-img: "img/green.jpg"
 ---
 
-我是卢佳斌,一个Amazon西雅图的程序员。
+我是卢佳斌，一个Amazon西雅图的程序员。
 
 爱好广泛，对世界充满好奇。
 
@@ -19,11 +19,13 @@ header-img: "img/green.jpg"
 ###最近做的事
 
 ###我关心的事情
+
 IT
 软件
 运动
 教育
 慈善
+艺术
 
 ###我喜欢的人
 
@@ -177,4 +179,4 @@ Quentin Jerome Tarantino
 
 - [Linkedin](https://www.linkedin.com/in/jiabinlu)
 
-- 邮箱:jiabinlu325204@gmail.com
+- 邮箱: jiabinlu325204@gmail.com
