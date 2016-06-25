@@ -116,7 +116,7 @@ Quentin Jerome Tarantino
 
 ###我喜欢的电影
 
-[豆瓣电影](https://movie.douban.com/top250)
+[豆瓣电影TOP250](https://movie.douban.com/top250)
 前60名中未看的:
 海上钢琴师
 机器人总动员
@@ -177,10 +177,4 @@ Quentin Jerome Tarantino
 
 - [Linkedin](https://www.linkedin.com/in/jiabinlu)
 
-- [邮箱](jiabinlu325204@gmail.com)
-
-
-
-<center>
-    <p><img src="http://i173.photobucket.com/albums/w63/cnfeat/2015-08-29-2_zpsqj7po8eo.png" align="center"></p>
-</center>
+- 邮箱:jiabinlu325204@gmail.com
