@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   base: '/', // For user GitHub Pages site (username.github.io)
   build: {
-    outDir: 'docs', // GitHub Pages can serve from docs folder
+    outDir: 'docs', 
     assetsDir: 'assets',
     rollupOptions: {
       output: {
