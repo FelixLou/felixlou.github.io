@@ -7,6 +7,12 @@ export default defineConfig({
   base: '/', // For user GitHub Pages site (username.github.io)
   build: {
     outDir: 'docs', // GitHub Pages can serve from docs folder
+    assetsDir: 'assets',
+    rollupOptions: {
+      output: {
+        manualChunks: undefined,
+      },
+    },
   },
   optimizeDeps: {
     exclude: ['lucide-react'],
