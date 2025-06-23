@@ -89,7 +89,7 @@ function App() {
       <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-md z-50 border-b border-gray-100">
         <div className="max-w-6xl mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
-            <div className="font-bold text-xl text-slate-800">Alex Chen</div>
+                          <div className="font-bold text-xl text-slate-800">Jiabin Lu</div>
             <div className="hidden md:flex space-x-8">
               <a href="#about" className="text-slate-600 hover:text-amber-600 transition-colors">About</a>
               <a href="#beliefs" className="text-slate-600 hover:text-amber-600 transition-colors">Beliefs</a>
@@ -113,7 +113,7 @@ function App() {
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-orange-600"> Meaningful Impact</span>
           </h1>
           <p className="text-xl text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed">
-            I'm Alex Chen, a tech leader passionate about building teams and products that matter. 
+            I'm Jiabin Lu, a tech leader passionate about building teams and products that matter. 
             Let's explore the intersection of technology, leadership, and human impact together.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -371,7 +371,7 @@ function App() {
       {/* Footer */}
       <footer className="bg-slate-900 text-slate-400 py-12 px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <p className="mb-4">© 2025 Alex Chen. Building thoughtful technology, one conversation at a time.</p>
+          <p className="mb-4">© 2025 Jiabin Lu. Building thoughtful technology, one conversation at a time.</p>
           <div className="flex justify-center space-x-6">
             <a href="mailto:alex@example.com" className="hover:text-amber-400 transition-colors">
               <Mail className="w-5 h-5" />

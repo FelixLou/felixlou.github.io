@@ -1,4 +1,4 @@
-# Alex Chen - Personal Website
+# Jiabin Lu - Personal Website
 
 A thoughtful tech leader's personal website built with React, TypeScript, and Tailwind CSS.
 
