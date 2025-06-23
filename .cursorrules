@@ -1,0 +1,13 @@
+# Cursor Rules for felixlou.github.io
+
+## Git Workflow
+- Do NOT automatically add files to git, commit, or push changes
+- Always ask the user before making any git operations
+- Let the user decide when and what to commit
+- Only perform git operations when explicitly requested by the user
+
+## Development Workflow
+- Focus on making code changes and building the project
+- User will handle git operations manually
+- Provide clear information about what files have been changed
+- Suggest appropriate commit messages but don't execute them automatically 
