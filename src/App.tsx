@@ -104,34 +104,24 @@ function App() {
       <section className="pt-32 pb-20 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-8">
-            <div className="w-32 h-32 bg-gradient-to-br from-amber-400 to-orange-500 rounded-full mx-auto mb-6 flex items-center justify-center text-4xl font-bold text-white">
-              AC
+            <div className="w-32 h-32 rounded-full mx-auto mb-6 overflow-hidden border-4 border-white shadow-lg">
+              <img 
+                src="/profile.jpg" 
+                alt="Jiabin Lu Profile" 
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
           <h1 className="text-5xl md:text-6xl font-bold text-slate-800 mb-6 leading-tight">
-            Thoughtful Tech Leadership for 
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-orange-600"> Meaningful Impact</span>
+            Freedom from
+            <br />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-orange-600">Software, Content, People and AI</span>
           </h1>
           <p className="text-xl text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed">
-            I'm Jiabin Lu, a tech leader passionate about building teams and products that matter. 
-            Let's explore the intersection of technology, leadership, and human impact together.
+            I'm Jiabin Lu, a systems-minded builder who leverages software, content, people and AI to create freedom. 
+            Let's explore the intersection of technology and humanity together.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a 
-              href="#about" 
-              className="bg-slate-800 text-white px-8 py-4 rounded-lg hover:bg-slate-700 transition-all duration-300 flex items-center justify-center group"
-            >
-              Learn About My Journey
-              <ChevronRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </a>
-            <button 
-              onClick={() => setShowBookingForm(true)}
-              className="border-2 border-amber-500 text-amber-600 px-8 py-4 rounded-lg hover:bg-amber-500 hover:text-white transition-all duration-300 flex items-center justify-center"
-            >
-              <Calendar className="mr-2 w-5 h-5" />
-              Book 1:1 Chat ($10)
-            </button>
-          </div>
+
         </div>
       </section>
 
@@ -243,25 +233,7 @@ function App() {
             I love connecting with fellow tech leaders, aspiring entrepreneurs, and anyone passionate about building meaningful products.
           </p>
           
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
-            <div className="bg-slate-700 p-8 rounded-xl">
-              <Calendar className="w-8 h-8 text-amber-400 mx-auto mb-4" />
-              <h3 className="text-xl font-semibold text-white mb-4">1:1 Consultation</h3>
-              <p className="text-slate-300 mb-6 leading-relaxed">
-                Book a focused 1-hour conversation about leadership challenges, career growth, or product strategy.
-              </p>
-              <div className="flex items-center justify-center space-x-2 text-amber-400 mb-4">
-                <span className="text-2xl font-bold">$10</span>
-                <span>/hour</span>
-              </div>
-              <button 
-                onClick={() => setShowBookingForm(true)}
-                className="bg-amber-500 text-white px-6 py-3 rounded-lg hover:bg-amber-400 transition-colors"
-              >
-                Schedule Now
-              </button>
-            </div>
-            
+          <div className="max-w-md mx-auto">
             <div className="bg-slate-700 p-8 rounded-xl">
               <Mail className="w-8 h-8 text-amber-400 mx-auto mb-4" />
               <h3 className="text-xl font-semibold text-white mb-4">Get In Touch</h3>
@@ -269,17 +241,14 @@ function App() {
                 Have a question, want to collaborate, or just say hello? I'd love to hear from you.
               </p>
               <div className="flex justify-center space-x-4">
-                <a href="mailto:alex@example.com" className="bg-amber-500 p-3 rounded-lg hover:bg-amber-400 transition-colors">
+                <a href="mailto:jiabinlu325204@gmail.com" className="bg-amber-500 p-3 rounded-lg hover:bg-amber-400 transition-colors">
                   <Mail className="w-5 h-5 text-white" />
                 </a>
-                <a href="#" className="bg-slate-600 p-3 rounded-lg hover:bg-slate-500 transition-colors">
+                <a href="https://www.linkedin.com/in/jiabinlu/" className="bg-slate-600 p-3 rounded-lg hover:bg-slate-500 transition-colors">
                   <Linkedin className="w-5 h-5 text-white" />
                 </a>
-                <a href="#" className="bg-slate-600 p-3 rounded-lg hover:bg-slate-500 transition-colors">
+                <a href="https://x.com/jiabinlu123" className="bg-slate-600 p-3 rounded-lg hover:bg-slate-500 transition-colors">
                   <Twitter className="w-5 h-5 text-white" />
-                </a>
-                <a href="#" className="bg-slate-600 p-3 rounded-lg hover:bg-slate-500 transition-colors">
-                  <Github className="w-5 h-5 text-white" />
                 </a>
               </div>
             </div>
@@ -372,20 +341,7 @@ function App() {
       <footer className="bg-slate-900 text-slate-400 py-12 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <p className="mb-4">© 2025 Jiabin Lu. Building thoughtful technology, one conversation at a time.</p>
-          <div className="flex justify-center space-x-6">
-            <a href="mailto:alex@example.com" className="hover:text-amber-400 transition-colors">
-              <Mail className="w-5 h-5" />
-            </a>
-            <a href="#" className="hover:text-amber-400 transition-colors">
-              <Linkedin className="w-5 h-5" />
-            </a>
-            <a href="#" className="hover:text-amber-400 transition-colors">
-              <Twitter className="w-5 h-5" />
-            </a>
-            <a href="#" className="hover:text-amber-400 transition-colors">
-              <Github className="w-5 h-5" />
-            </a>
-          </div>
+          
         </div>
       </footer>
     </div>
