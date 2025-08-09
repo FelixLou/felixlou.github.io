@@ -11,8 +11,8 @@ const BlogList: React.FC = () => {
     async function loadPosts() {
       try {
         const allPosts = await getAllBlogPosts();
-        // For development, show all posts. In production, you can filter to published only
-        const postsToShow = process.env.NODE_ENV === 'development' ? allPosts : getPublishedPosts(allPosts);
+        // Show only published posts
+        const postsToShow = getPublishedPosts(allPosts);
         setBlogPosts(postsToShow);
       } catch (error) {
         console.error('Error loading blog posts:', error);
