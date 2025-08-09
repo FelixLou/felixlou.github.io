@@ -45,7 +45,7 @@ export const products: Product[] = [
       'Easy sharing with extended family members'
     ],
     targetAudience: 'Parents with young children (ages 2-12) who want to preserve family memories in a creative, engaging way.',
-    imageUrl: 'https://images.unsplash.com/photo-1609081219090-a6d81d3085bf?w=600&h=400&fit=crop&crop=center',
+    imageUrl: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=600&h=400&fit=crop&crop=center',
     demoUrl: 'https://rad-salamander-f83580.netlify.app',
     launchDate: '2024-09-15'
   },
@@ -78,7 +78,7 @@ export const products: Product[] = [
       'Builds confidence in professional communication'
     ],
     targetAudience: 'Non-native English speakers in professional environments, remote workers, international teams.',
-    imageUrl: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&h=400&fit=crop&crop=center',
+    imageUrl: 'https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600&h=400&fit=crop&crop=center',
     demoUrl: 'https://darling-nasturtium-a55530.netlify.app',
     launchDate: '2025-08-09'
   },
@@ -115,7 +115,7 @@ export const products: Product[] = [
       'One-click distribution to multiple platforms'
     ],
     targetAudience: 'Content creators, marketing teams, small businesses, agencies, and entrepreneurs looking to scale their content production.',
-    imageUrl: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop&crop=center',
+    imageUrl: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop&crop=center',
     demoUrl: 'https://contentseed.jiabinlu.com/',
     launchDate: '2024-11-15'
   },

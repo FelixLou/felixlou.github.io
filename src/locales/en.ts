@@ -17,33 +17,33 @@ export const en = {
     },
     about: {
       title: 'About Me',
-      description: 'I\'m a systems-minded builder passionate about leveraging technology to create freedom and meaningful impact.',
-      passion: 'My passion lies in building products that solve real problems, leading technical teams to achieve ambitious goals, and sharing knowledge that empowers others.',
-      journey: 'Currently, I\'m focused on the intersection of software engineering, content creation, and AI. I believe in building thoughtful technology that amplifies human potential rather than replacing it.',
+      description: 'I began my career as a software engineer, driven by the belief that technology can turn ambitious ideas into reality. Over the past decade, I’ve moved from building individual features to creating products and systems that combine AI, software, and content to solve problems at scale.',
+      passion: 'My experience spans scrappy startups and established enterprises, where I’ve learned that winning in the market isn’t just about writing great code—it’s about designing experiences, leveraging data, and aligning technology with a clear business model.',
+      journey: 'Today, my focus is on using AI-powered software and high-value content to build products that capture attention, drive engagement, and generate sustainable revenue. I believe the future belongs to those who can integrate technology, storytelling, and business strategy into a single, cohesive product vision.',
       currentFocus: 'Current Focus',
       currentFocusDesc: 'AI-powered software and high-value content',
       experience: 'Experience',
       experienceDesc: '10+ years in tech, 3+ years in leadership',
       passionTitle: 'Passion',
-      passionDesc: 'Building inclusive, high-performing teams',
+      passionDesc: 'Business and Tech',
     },
     beliefs: {
       title: 'Core Beliefs',
       subtitle: 'The principles that guide my approach to technology, business, and life',
-      systemsThinking: {
-        title: 'Systems thinking',
-        description: 'Complex problems require understanding the interconnections between parts. I approach challenges by mapping relationships, feedback loops, and emergent behaviors rather than treating symptoms in isolation.',
+      growthMindset: {
+        title: 'Growth Mindset',
+        description: 'I treat every stage of life as an opportunity to expand capability, perspective, and leverage — not through random exploration, but through deliberate, high-ROI learning.',
       },
-      buildInPublic: {
-        title: 'Build in public',
-        description: 'Transparency accelerates growth. By sharing the journey, challenges, and learnings openly, we create opportunities for collaboration, feedback, and collective advancement.',
-      },
-      peopleFirst: {
-        title: 'People first',
-        description: 'Technology should amplify human potential, not replace human connection. The best solutions arise when we prioritize human needs, values, and experiences in everything we build.',
+      actionWithPrecision: {
+        title: 'Action with Precision',
+        description: 'Speed matters, so does aim. I move quickly when the target is clear, balancing decisive execution with the discipline to prepare well.',
       },
       humility: {
         title: 'Humility',
+        description: 'I stay open to new ideas, respect every perspective, and recognize that no matter how much I’ve achieved, there’s always more to learn.',
+      },
+      lifeIsAJourney: {
+        title: 'Life is a journey',
         description: 'As Steve Jobs said, "You can\'t connect the dots looking forward; you can only connect them looking backwards." I make decisions with conviction, trusting that the dots will connect into a coherent and meaningful journey over time.',
       },
     },

@@ -24,40 +24,26 @@ const Home: React.FC = () => {
   const beliefs = [
     {
       icon: <Brain className="w-6 h-6" />,
-      title: t('home.beliefs.systemsThinking.title'),
-      description: t('home.beliefs.systemsThinking.description')
+      title: t('home.beliefs.growthMindset.title'),
+      description: t('home.beliefs.growthMindset.description')
     },
     {
       icon: <Target className="w-6 h-6" />,
-      title: t('home.beliefs.buildInPublic.title'),
-      description: t('home.beliefs.buildInPublic.description')
+      title: t('home.beliefs.actionWithPrecision.title'),
+      description: t('home.beliefs.actionWithPrecision.description')
     },
     {
       icon: <Users className="w-6 h-6" />,
-      title: t('home.beliefs.peopleFirst.title'),
-      description: t('home.beliefs.peopleFirst.description')
+      title: t('home.beliefs.humility.title'),
+      description: t('home.beliefs.humility.description')
     },
     {
       icon: <Heart className="w-6 h-6" />,
-      title: t('home.beliefs.humility.title'),
-      description: t('home.beliefs.humility.description')
+      title: t('home.beliefs.lifeIsAJourney.title'),
+      description: t('home.beliefs.lifeIsAJourney.description')
     }
   ];
 
-
-
-  const timeSlots = [
-    "9:00 AM - 10:00 AM",
-    "2:00 PM - 3:00 PM", 
-    "4:00 PM - 5:00 PM",
-    "7:00 PM - 8:00 PM"
-  ];
-
-  const handleBookingSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    alert('Booking functionality would integrate with payment processing and calendar scheduling. Thank you for your interest!');
-    setShowBookingForm(false);
-  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
