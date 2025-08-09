@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && npm run copy-blog-posts",
+    "copy-blog-posts": "cp -r public/blog-posts docs/",
     "lint": "eslint .",
     "preview": "vite preview"
   },
