@@ -32,7 +32,10 @@ export async function getAllBlogPosts(): Promise<BlogPostMeta[]> {
   
   for (const fileName of BLOG_POST_FILES) {
     try {
+      console.log(`Attempting to fetch: /blog-posts/${fileName}`);
       const response = await fetch(`/blog-posts/${fileName}`);
+      console.log(`Response status for ${fileName}:`, response.status);
+      
       if (response.ok) {
         const markdown = await response.text();
         const { data } = matter(markdown);
@@ -47,12 +50,16 @@ export async function getAllBlogPosts(): Promise<BlogPostMeta[]> {
           excerpt: data.excerpt || '',
           published: data.published ?? false
         });
+        console.log(`Successfully loaded blog post: ${id}`);
+      } else {
+        console.error(`Failed to load ${fileName}: ${response.status} ${response.statusText}`);
       }
     } catch (error) {
       console.error(`Error loading blog post ${fileName}:`, error);
     }
   }
   
+  console.log(`Total posts loaded: ${posts.length}`);
   // Sort by date (newest first)
   return posts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 }
