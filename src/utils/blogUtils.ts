@@ -32,8 +32,8 @@ export async function getAllBlogPosts(): Promise<BlogPostMeta[]> {
   
   for (const fileName of BLOG_POST_FILES) {
     try {
-      console.log(`Attempting to fetch: /blog/${fileName}`);
-      const response = await fetch(`/blog/${fileName}`);
+      console.log(`Attempting to fetch: /blog-posts/${fileName}`);
+      const response = await fetch(`/blog-posts/${fileName}`);
       console.log(`Response status for ${fileName}:`, response.status);
       
       if (response.ok) {
@@ -67,7 +67,7 @@ export async function getAllBlogPosts(): Promise<BlogPostMeta[]> {
 export async function getBlogPost(id: string): Promise<BlogPost | null> {
   try {
     const fileName = `${id}.md`;
-    const response = await fetch(`/blog/${fileName}`);
+    const response = await fetch(`/blog-posts/${fileName}`);
     
     if (!response.ok) {
       return null;
