@@ -133,22 +133,8 @@ const PortfolioList: React.FC = () => {
 
 
 
-                {/* Action Buttons */}
-                <div className="flex items-center justify-between">
-                  <div className="flex space-x-2">
-                    {product.githubUrl && (
-                      <a
-                        href={product.githubUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center text-xs text-slate-600 hover:text-slate-700 font-medium"
-                      >
-                        <Github className="w-3 h-3 mr-1" />
-                        Code
-                      </a>
-                    )}
-                  </div>
-
+                {/* Action Button */}
+                <div className="text-right">
                   {product.demoUrl ? (
                     <a
                       href={product.demoUrl}
@@ -160,13 +146,12 @@ const PortfolioList: React.FC = () => {
                       Visit
                     </a>
                   ) : (
-                    <Link
-                      to={`/portfolio/${product.id}`}
-                      className="inline-flex items-center bg-amber-500 text-white px-4 py-2 rounded-lg hover:bg-amber-600 transition-colors font-medium text-sm group"
+                    <button
+                      disabled
+                      className="inline-flex items-center bg-gray-400 text-white px-4 py-2 rounded-lg cursor-not-allowed font-medium text-sm"
                     >
-                      Learn More
-                      <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                    </Link>
+                      Coming Soon
+                    </button>
                   )}
                 </div>
               </div>

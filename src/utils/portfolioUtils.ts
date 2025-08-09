@@ -12,13 +12,7 @@ export interface Product {
   targetAudience: string;
   imageUrl?: string;
   demoUrl?: string;
-  githubUrl?: string;
   launchDate?: string;
-  metrics?: {
-    users?: string;
-    revenue?: string;
-    growth?: string;
-  };
 }
 
 export const products: Product[] = [
@@ -52,17 +46,12 @@ export const products: Product[] = [
     ],
     targetAudience: 'Parents with young children (ages 2-12) who want to preserve family memories in a creative, engaging way.',
     imageUrl: 'https://images.unsplash.com/photo-1609081219090-a6d81d3085bf?w=600&h=400&fit=crop&crop=center',
-    demoUrl: 'https://loveable-moments.demo.jiabinlu.com',
-    launchDate: '2024-09-15',
-    metrics: {
-      users: '2.5K+ families',
-      revenue: '$12K MRR',
-      growth: '25% monthly'
-    }
+    demoUrl: 'https://rad-salamander-f83580.netlify.app',
+    launchDate: '2024-09-15'
   },
   {
     id: 'tone-improver',
-    title: 'Professional Tone Improver',
+    title: 'Align AI',
     tagline: 'AI-powered communication clarity for non-native speakers',
     description: 'A micro SaaS that helps non-native English speakers improve their professional communication tone to avoid misunderstandings in the workplace.',
     category: 'Productivity SaaS',
@@ -90,14 +79,8 @@ export const products: Product[] = [
     ],
     targetAudience: 'Non-native English speakers in professional environments, remote workers, international teams.',
     imageUrl: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&h=400&fit=crop&crop=center',
-    demoUrl: 'https://tone-improver.jiabinlu.com',
-    githubUrl: 'https://github.com/jiabinlu/tone-improver',
-    launchDate: '2024-06-20',
-    metrics: {
-      users: '8.3K+ professionals',
-      revenue: '$28K MRR',
-      growth: '40% monthly'
-    }
+    demoUrl: 'https://darling-nasturtium-a55530.netlify.app',
+    launchDate: '2025-08-09'
   },
   {
     id: 'contentseed',
@@ -134,12 +117,7 @@ export const products: Product[] = [
     targetAudience: 'Content creators, marketing teams, small businesses, agencies, and entrepreneurs looking to scale their content production.',
     imageUrl: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop&crop=center',
     demoUrl: 'https://contentseed.jiabinlu.com/',
-    launchDate: '2024-11-15',
-    metrics: {
-      users: '5.2K+ creators',
-      revenue: '$35K MRR',
-      growth: '45% monthly'
-    }
+    launchDate: '2024-11-15'
   },
 ];
 

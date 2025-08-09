@@ -1,11 +1,40 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useLanguage } from '../contexts/LanguageContext';
-import { Globe } from 'lucide-react';
+import { Globe, X } from 'lucide-react';
 
 const Navigation: React.FC = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const mobileMenuRef = useRef<HTMLDivElement>(null);
   const location = useLocation();
   const { language, setLanguage, t } = useLanguage();
+
+  // Close mobile menu when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (mobileMenuRef.current && !mobileMenuRef.current.contains(event.target as Node)) {
+        setIsMobileMenuOpen(false);
+      }
+    };
+
+    if (isMobileMenuOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isMobileMenuOpen]);
+
+  // Close mobile menu on route change
+  useEffect(() => {
+    setIsMobileMenuOpen(false);
+  }, [location.pathname]);
+
+  // Toggle mobile menu
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
   
   const isActive = (path: string) => {
     if (path === '/' && location.pathname === '/') return true;
@@ -70,13 +99,70 @@ const Navigation: React.FC = () => {
                         </div>
                       </div>
           
-          {/* Mobile menu button - you can enhance this later */}
-          <div className="md:hidden">
-            <button className="text-slate-600 hover:text-amber-600">
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
+          {/* Mobile menu button */}
+          <div className="md:hidden" ref={mobileMenuRef}>
+            <button 
+              onClick={toggleMobileMenu}
+              className="text-slate-600 hover:text-amber-600 transition-colors"
+              aria-label="Toggle mobile menu"
+            >
+              {isMobileMenuOpen ? (
+                <X className="w-6 h-6" />
+              ) : (
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              )}
             </button>
+
+            {/* Mobile menu panel */}
+            {isMobileMenuOpen && (
+              <div className="absolute top-full left-0 right-0 bg-white/95 backdrop-blur-md border-b border-gray-200 shadow-lg">
+                <div className="px-6 py-4 space-y-4">
+                  <Link to="/blog" className={`block py-2 ${linkClass('/blog')}`}>
+                    {t('nav.blog')}
+                  </Link>
+                  <Link to="/portfolio" className={`block py-2 ${linkClass('/portfolio')}`}>
+                    {t('nav.portfolio')}
+                  </Link>
+                  <a href="/#about" className={`block py-2 ${linkClass('/#about')}`}>
+                    {t('nav.about')}
+                  </a>
+                  <Link to="/books" className={`block py-2 ${linkClass('/books')}`}>
+                    {t('nav.books')}
+                  </Link>
+                  <a href="/#connect" className={`block py-2 ${linkClass('/#connect')}`}>
+                    {t('nav.connect')}
+                  </a>
+                  
+                  {/* Mobile Language Switcher */}
+                  <div className="border-t pt-4 mt-4">
+                    <div className="flex items-center space-x-4">
+                      <span className="text-sm text-slate-600 flex items-center">
+                        <Globe className="w-4 h-4 mr-2" />
+                        Language:
+                      </span>
+                      <button
+                        onClick={() => setLanguage('en')}
+                        className={`text-sm px-3 py-1 rounded ${
+                          language === 'en' ? 'bg-amber-100 text-amber-600 font-medium' : 'text-slate-600 hover:text-amber-600'
+                        }`}
+                      >
+                        EN
+                      </button>
+                      <button
+                        onClick={() => setLanguage('zh')}
+                        className={`text-sm px-3 py-1 rounded ${
+                          language === 'zh' ? 'bg-amber-100 text-amber-600 font-medium' : 'text-slate-600 hover:text-amber-600'
+                        }`}
+                      >
+                        中文
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </div>
