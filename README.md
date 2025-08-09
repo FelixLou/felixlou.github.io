@@ -31,6 +31,23 @@ This project is configured for easy deployment to GitHub Pages:
 5. Push the `docs` folder to your repository
 6. In GitHub repository settings > Pages, set source to "Deploy from a branch" and select `main` branch with `/docs` folder
 
+### Important: Preserve the `.nojekyll` File
+
+**⚠️ DO NOT DELETE the `.nojekyll` file!** 
+
+The `.nojekyll` file in the `docs` folder is essential for GitHub Pages to work correctly with this React SPA setup. This file tells GitHub Pages:
+
+- **Not to process the site with Jekyll** (GitHub's default static site generator)
+- **To serve files with underscores** (like `_next`, `_app`, etc.)
+- **To handle client-side routing properly** with the 404.html redirect
+
+If you delete this file, you may experience:
+- 404 errors on direct URL access
+- Broken asset loading
+- Routing issues with React Router
+
+The `.nojekyll` file is automatically created during the build process and should be preserved in your repository.
+
 ## Local Development
 
 ```bash
