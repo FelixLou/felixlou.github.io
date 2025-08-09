@@ -5,12 +5,14 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import rehypeHighlight from 'rehype-highlight';
 import { getBlogPost, formatDate, type BlogPost as BlogPostType } from '../utils/blogUtils';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const BlogPost: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const [post, setPost] = useState<BlogPostType | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
+  const { t } = useLanguage();
   
   // Comment state
   const [comments, setComments] = useState<Comment[]>([]);
@@ -67,14 +69,14 @@ const BlogPost: React.FC = () => {
     return (
       <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 pt-32 pb-20">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h1 className="text-4xl font-bold text-slate-800 mb-4">Post Not Found</h1>
-          <p className="text-slate-600 mb-8">The blog post you're looking for doesn't exist.</p>
+          <h1 className="text-4xl font-bold text-slate-800 mb-4">{t('blog.postNotFound')}</h1>
+          <p className="text-slate-600 mb-8">{t('blog.postNotFoundDesc')}</p>
           <Link 
             to="/blog" 
             className="inline-flex items-center text-amber-600 hover:text-amber-700 font-medium"
           >
             <ArrowLeft className="w-4 h-4 mr-2" />
-            Back to Blog
+            {t('blog.backToBlog')}
           </Link>
         </div>
       </div>
@@ -91,7 +93,7 @@ const BlogPost: React.FC = () => {
             className="inline-flex items-center text-slate-600 hover:text-amber-600 transition-colors"
           >
             <ArrowLeft className="w-4 h-4 mr-2" />
-            Back to Blog
+            {t('blog.backToBlog')}
           </Link>
         </div>
 
@@ -145,8 +147,7 @@ const BlogPost: React.FC = () => {
             <div>
               <h3 className="font-semibold text-slate-800 mb-1">Jiabin Lu</h3>
               <p className="text-slate-600 text-sm leading-relaxed">
-                Systems-minded builder who leverages software, content, and AI to create freedom. 
-                Passionate about the intersection of technology and humanity.
+                {t('blog.author.description')}
               </p>
               <div className="flex space-x-4 mt-3">
                 <a 
@@ -177,7 +178,7 @@ const BlogPost: React.FC = () => {
             className="inline-flex items-center bg-amber-500 text-white px-6 py-3 rounded-lg hover:bg-amber-600 transition-colors font-medium"
           >
             <ArrowLeft className="w-4 h-4 mr-2" />
-            Read More Articles
+            {t('blog.readMoreArticles')}
           </Link>
         </div>
       </article>

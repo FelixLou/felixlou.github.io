@@ -21,11 +21,13 @@ import {
   getBooksByStatus,
   type Book 
 } from '../utils/bookUtils';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const Books: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [selectedStatus, setSelectedStatus] = useState<string>('all');
   const categories = getAllCategories();
+  const { t } = useLanguage();
 
   const getFilteredBooks = (): Book[] => {
     let filteredBooks = books;
@@ -72,11 +74,11 @@ const Books: React.FC = () => {
   const getStatusText = (status: Book['status']) => {
     switch (status) {
       case 'read':
-        return 'Read';
+        return t('books.read');
       case 'reading':
-        return 'Currently Reading';
+        return t('books.reading');
       case 'want-to-read':
-        return 'Want to Read';
+        return t('books.wantToRead');
       default:
         return status;
     }
@@ -98,11 +100,10 @@ const Books: React.FC = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-5xl md:text-6xl font-bold text-slate-800 mb-6">
-            My Library
+            {t('books.title')}
           </h1>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-            Books that have shaped my thinking as an engineer, leader, and human. 
-            Each one selected for its practical wisdom and lasting impact.
+            {t('books.subtitle')}
           </p>
         </div>
 
@@ -112,25 +113,25 @@ const Books: React.FC = () => {
             <div className="text-2xl font-bold text-slate-800 mb-1">
               {books.filter(b => b.status === 'read').length}
             </div>
-            <div className="text-sm text-slate-600">Books Read</div>
+            <div className="text-sm text-slate-600">{t('books.booksRead')}</div>
           </div>
           <div className="bg-white rounded-lg p-4 text-center shadow-sm">
             <div className="text-2xl font-bold text-slate-800 mb-1">
               {books.filter(b => b.status === 'reading').length}
             </div>
-            <div className="text-sm text-slate-600">Currently Reading</div>
+            <div className="text-sm text-slate-600">{t('books.currentlyReading')}</div>
           </div>
           <div className="bg-white rounded-lg p-4 text-center shadow-sm">
             <div className="text-2xl font-bold text-slate-800 mb-1">
               {books.filter(b => b.rating >= 4 && b.rating > 0).length}
             </div>
-            <div className="text-sm text-slate-600">Highly Rated</div>
+            <div className="text-sm text-slate-600">{t('books.highlyRated')}</div>
           </div>
           <div className="bg-white rounded-lg p-4 text-center shadow-sm">
             <div className="text-2xl font-bold text-slate-800 mb-1">
               {categories.length}
             </div>
-            <div className="text-sm text-slate-600">Categories</div>
+            <div className="text-sm text-slate-600">{t('books.categories')}</div>
           </div>
         </div>
 
@@ -138,13 +139,13 @@ const Books: React.FC = () => {
         <div className="mb-12">
           <div className="flex items-center mb-4">
             <Filter className="w-5 h-5 mr-2 text-slate-600" />
-            <h2 className="text-lg font-semibold text-slate-800">Filter Books</h2>
+            <h2 className="text-lg font-semibold text-slate-800">{t('books.filterBooks')}</h2>
           </div>
           
           <div className="grid md:grid-cols-2 gap-6">
             {/* Category Filter */}
             <div>
-              <h3 className="text-sm font-medium text-slate-700 mb-3">By Category</h3>
+              <h3 className="text-sm font-medium text-slate-700 mb-3">{t('books.byCategory')}</h3>
               <div className="flex flex-wrap gap-2">
                 <button
                   onClick={() => setSelectedCategory('all')}
@@ -154,7 +155,7 @@ const Books: React.FC = () => {
                       : 'bg-white text-slate-600 hover:bg-amber-50 hover:text-amber-600'
                   }`}
                 >
-                  All ({books.length})
+                  {t('common.all')} ({books.length})
                 </button>
                 {categories.map(category => (
                   <button
@@ -174,7 +175,7 @@ const Books: React.FC = () => {
 
             {/* Status Filter */}
             <div>
-              <h3 className="text-sm font-medium text-slate-700 mb-3">By Status</h3>
+              <h3 className="text-sm font-medium text-slate-700 mb-3">{t('books.byStatus')}</h3>
               <div className="flex flex-wrap gap-2">
                 <button
                   onClick={() => setSelectedStatus('all')}
@@ -184,7 +185,7 @@ const Books: React.FC = () => {
                       : 'bg-white text-slate-600 hover:bg-blue-50 hover:text-blue-600'
                   }`}
                 >
-                  All
+                  {t('common.all')}
                 </button>
                 {['read', 'reading', 'want-to-read'].map(status => (
                   <button
@@ -265,7 +266,7 @@ const Books: React.FC = () => {
                 </h3>
 
                 <p className="text-sm text-slate-600 mb-3">
-                  by {book.author}
+                  {t('books.by')} {book.author}
                 </p>
 
                 <p className="text-sm text-slate-600 leading-relaxed mb-4 line-clamp-3">
@@ -277,7 +278,7 @@ const Books: React.FC = () => {
                   <div className="mb-4">
                     <div className="flex items-center mb-2">
                       <Lightbulb className="w-3 h-3 mr-1 text-amber-500" />
-                      <span className="text-xs font-medium text-slate-700">Key Insights</span>
+                      <span className="text-xs font-medium text-slate-700">{t('books.keyInsightsLabel')}</span>
                     </div>
                     <div className="text-xs text-slate-600 line-clamp-2">
                       {book.keyTakeaways[0]}
@@ -314,13 +315,13 @@ const Books: React.FC = () => {
                       className="inline-flex items-center text-xs text-amber-600 hover:text-amber-700 font-medium"
                     >
                       <ExternalLink className="w-3 h-3 mr-1" />
-                      View on Amazon
+                      {t('books.viewOnAmazon')}
                     </a>
                   )}
                   
                   {book.keyTakeaways.length > 1 && (
                     <span className="text-xs text-slate-500">
-                      {book.keyTakeaways.length} insights
+                      {book.keyTakeaways.length} {t('books.insights')}
                     </span>
                   )}
                 </div>
@@ -333,8 +334,8 @@ const Books: React.FC = () => {
         {filteredBooks.length === 0 && (
           <div className="text-center py-12">
             <BookOpen className="w-16 h-16 mx-auto mb-4 text-slate-400" />
-            <h3 className="text-xl font-semibold text-slate-800 mb-2">No books found</h3>
-            <p className="text-slate-600 mb-4">Try adjusting your filters to see more books.</p>
+            <h3 className="text-xl font-semibold text-slate-800 mb-2">{t('books.noBooksFound')}</h3>
+            <p className="text-slate-600 mb-4">{t('books.noBooksDescription')}</p>
             <button
               onClick={() => {
                 setSelectedCategory('all');
@@ -342,7 +343,7 @@ const Books: React.FC = () => {
               }}
               className="text-amber-600 hover:text-amber-700 font-medium"
             >
-              Clear all filters
+              {t('books.clearFilters')}
             </button>
           </div>
         )}
@@ -352,17 +353,16 @@ const Books: React.FC = () => {
           <div className="bg-white rounded-xl p-8 shadow-sm">
             <Target className="w-12 h-12 mx-auto mb-4 text-amber-500" />
             <h3 className="text-2xl font-semibold text-slate-800 mb-4">
-              Book Recommendations?
+              {t('books.bookRecommendations')}
             </h3>
             <p className="text-slate-600 mb-6 max-w-2xl mx-auto">
-              I'm always looking for great books to add to my reading list. 
-              If you have recommendations that align with software engineering, leadership, or personal growth, I'd love to hear them!
+              {t('books.bookRecommendationsDescription')}
             </p>
             <Link 
               to="/#connect"
               className="inline-flex items-center bg-amber-500 text-white px-6 py-3 rounded-lg hover:bg-amber-600 transition-colors font-medium"
             >
-              Share Your Recommendations
+              {t('books.shareRecommendations')}
             </Link>
           </div>
         </div>
@@ -373,7 +373,7 @@ const Books: React.FC = () => {
             to="/"
             className="inline-flex items-center text-slate-600 hover:text-amber-600 transition-colors"
           >
-            ← Back to Home
+            {t('common.backToHome')}
           </Link>
         </div>
       </div>

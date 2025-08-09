@@ -20,6 +20,12 @@ export const zh = {
       description: '我是一个系统化思维的构建者，热衷于利用技术创造自由和有意义的影响。',
       passion: '我的热情在于构建解决实际问题的产品，领导技术团队实现雄心勃勃的目标，并分享赋能他人的知识。',
       journey: '目前，我专注于软件工程、内容创作和AI的交汇点。我相信构建深思熟虑的技术来放大人类潜能，而不是取代它。',
+      currentFocus: '当前专注',
+      currentFocusDesc: 'AI驱动的软件和高价值内容',
+      experience: '经验',
+      experienceDesc: '10+年技术经验，3+年领导经验',
+      passionTitle: '激情',
+      passionDesc: '构建包容性的高绩效团队',
     },
     beliefs: {
       title: '核心信念',
@@ -63,6 +69,8 @@ export const zh = {
     moreArticles: '更多文章即将推出！关注我获取更新。',
     backToHome: '返回首页',
     draft: '草稿',
+    postNotFound: '未找到文章',
+    postNotFoundDesc: '您要找的博客文章不存在。',
     author: {
       description: '系统化思维的构建者，通过软件、内容和AI创造自由。对技术与人文的交汇点充满热情。',
     },
@@ -102,6 +110,9 @@ export const zh = {
     technologyStack: '技术栈',
     users: '用户',
     growth: '增长',
+    live: '上线',
+    visit: '访问',
+    comingSoon: '即将推出',
   },
 
   // Books
@@ -129,14 +140,17 @@ export const zh = {
     bookRecommendationsDescription: '我总是在寻找要添加到阅读清单的好书。如果您有与软件工程、领导力或个人成长相关的推荐，我很乐意听取。',
     shareRecommendations: '分享您的推荐',
     notRated: '未评分',
+    by: '作者',
+    keyInsightsLabel: '关键见解',
   },
 
   // Common
   common: {
     loading: '加载中...',
     error: '错误',
-    backToHome: '返回首页',
+    backToHome: '← 返回首页',
     comingSoon: '即将推出',
+    all: '全部',
   },
 
   // Language Switcher

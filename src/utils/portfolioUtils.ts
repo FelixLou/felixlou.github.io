@@ -87,7 +87,7 @@ export const products: Product[] = [
     title: 'ContentSeed',
     tagline: 'AI-powered content generation and optimization platform',
     description: 'A comprehensive platform that helps content creators and businesses generate, optimize, and distribute high-quality content using advanced AI technology.',
-    category: 'Content & AI',
+    category: 'Content creation',
     status: 'launched',
     technologies: ['Next.js', 'OpenAI GPT-4', 'TypeScript', 'Tailwind CSS', 'Prisma', 'PostgreSQL', 'Vercel'],
     features: [

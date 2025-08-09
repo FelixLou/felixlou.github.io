@@ -2,10 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { Calendar, ChevronRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { getAllBlogPosts, getPublishedPosts, formatDate, type BlogPostMeta } from '../utils/blogUtils';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const BlogList: React.FC = () => {
   const [blogPosts, setBlogPosts] = useState<BlogPostMeta[]>([]);
   const [loading, setLoading] = useState(true);
+  const { t } = useLanguage();
 
   useEffect(() => {
     async function loadPosts() {
@@ -30,10 +32,10 @@ const BlogList: React.FC = () => {
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
             <h1 className="text-5xl md:text-6xl font-bold text-slate-800 mb-6">
-              Latest Thoughts
+              {t('blog.title')}
             </h1>
             <p className="text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
-              Loading blog posts...
+              {t('blog.loading')}
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -57,10 +59,10 @@ const BlogList: React.FC = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-5xl md:text-6xl font-bold text-slate-800 mb-6">
-            Latest Thoughts
+            {t('blog.title')}
           </h1>
           <p className="text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
-            Insights on building systems, leveraging technology, and creating meaningful impact through software, content, and AI.
+            {t('blog.subtitle')}
           </p>
         </div>
 
@@ -79,7 +81,7 @@ const BlogList: React.FC = () => {
                     <span>{formatDate(post.date)}</span>
                     {!post.published && process.env.NODE_ENV === 'development' && (
                       <span className="ml-2 bg-red-100 text-red-800 px-2 py-1 rounded text-xs font-medium">
-                        Draft
+                        {t('blog.draft')}
                       </span>
                     )}
                   </div>
@@ -97,7 +99,7 @@ const BlogList: React.FC = () => {
                 </p>
                 
                 <div className="flex items-center text-amber-600 font-medium">
-                  <span>Read more</span>
+                  <span>{t('blog.readMore')}</span>
                   <ChevronRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
                 </div>
               </article>
@@ -107,7 +109,7 @@ const BlogList: React.FC = () => {
 
         {/* Call to Action */}
         <div className="text-center mt-16">
-          <p className="text-slate-600 mb-4">More articles coming soon! Follow me for updates.</p>
+          <p className="text-slate-600 mb-4">{t('blog.moreArticles')}</p>
           <div className="flex justify-center space-x-4">
             <a 
               href="https://www.linkedin.com/in/jiabinlu/" 
@@ -134,7 +136,7 @@ const BlogList: React.FC = () => {
             to="/" 
             className="inline-flex items-center text-slate-600 hover:text-amber-600 transition-colors"
           >
-            ← Back to Home
+            {t('common.backToHome')}
           </Link>
         </div>
       </div>

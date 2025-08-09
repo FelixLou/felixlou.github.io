@@ -20,6 +20,12 @@ export const en = {
       description: 'I\'m a systems-minded builder passionate about leveraging technology to create freedom and meaningful impact.',
       passion: 'My passion lies in building products that solve real problems, leading technical teams to achieve ambitious goals, and sharing knowledge that empowers others.',
       journey: 'Currently, I\'m focused on the intersection of software engineering, content creation, and AI. I believe in building thoughtful technology that amplifies human potential rather than replacing it.',
+      currentFocus: 'Current Focus',
+      currentFocusDesc: 'AI-powered software and high-value content',
+      experience: 'Experience',
+      experienceDesc: '10+ years in tech, 3+ years in leadership',
+      passionTitle: 'Passion',
+      passionDesc: 'Building inclusive, high-performing teams',
     },
     beliefs: {
       title: 'Core Beliefs',
@@ -63,6 +69,8 @@ export const en = {
     moreArticles: 'More articles coming soon! Follow me for updates.',
     backToHome: 'Back to Home',
     draft: 'Draft',
+    postNotFound: 'Post Not Found',
+    postNotFoundDesc: 'The blog post you\'re looking for doesn\'t exist.',
     author: {
       description: 'Systems-minded builder who leverages software, content, and AI to create freedom. Passionate about the intersection of technology and humanity.',
     },
@@ -102,6 +110,9 @@ export const en = {
     technologyStack: 'Technology Stack',
     users: 'Users',
     growth: 'Growth',
+    live: 'Live',
+    visit: 'Visit',
+    comingSoon: 'Coming Soon',
   },
 
   // Books
@@ -129,14 +140,17 @@ export const en = {
     bookRecommendationsDescription: 'I\'m always looking for great books to add to my reading list. If you have recommendations that align with software engineering, leadership, or personal growth, I\'d love to hear them!',
     shareRecommendations: 'Share Your Recommendations',
     notRated: 'Not rated',
+    by: 'by',
+    keyInsightsLabel: 'Key Insights',
   },
 
   // Common
   common: {
     loading: 'Loading...',
     error: 'Error',
-    backToHome: 'Back to Home',
+    backToHome: '← Back to Home',
     comingSoon: 'Coming Soon',
+    all: 'All',
   },
 
   // Language Switcher

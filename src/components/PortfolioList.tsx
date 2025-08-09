@@ -2,10 +2,12 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ExternalLink, Github, Calendar, Users, TrendingUp, DollarSign, Zap, Code, Target, ArrowRight } from 'lucide-react';
 import { products, getAllCategories, formatMetric, type Product } from '../utils/portfolioUtils';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const PortfolioList: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const categories = getAllCategories();
+  const { t } = useLanguage();
 
   const filteredProducts = selectedCategory === 'all' 
     ? products 
@@ -27,11 +29,11 @@ const PortfolioList: React.FC = () => {
   const getStatusText = (status: Product['status']) => {
     switch (status) {
       case 'launched':
-        return 'Live';
+        return t('portfolio.live');
       case 'in-development':
-        return 'In Development';
+        return t('portfolio.inDevelopment');
       case 'concept':
-        return 'Concept';
+        return t('portfolio.conceptPhase');
       default:
         return status;
     }
@@ -43,11 +45,10 @@ const PortfolioList: React.FC = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-5xl md:text-6xl font-bold text-slate-800 mb-6">
-            My Portfolio
+            {t('portfolio.title')}
           </h1>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-            Building products that solve real problems using software, AI, and thoughtful design. 
-            From family apps to professional tools, each project focuses on creating meaningful impact.
+            {t('portfolio.subtitle')}
           </p>
         </div>
 
@@ -61,7 +62,7 @@ const PortfolioList: React.FC = () => {
                 : 'bg-white text-slate-600 hover:bg-amber-50 hover:text-amber-600'
             }`}
           >
-            All Projects
+            {t('portfolio.allProjects')}
           </button>
           {categories.map(category => (
             <button
@@ -143,14 +144,14 @@ const PortfolioList: React.FC = () => {
                       className="inline-flex items-center bg-amber-500 text-white px-4 py-2 rounded-lg hover:bg-amber-600 transition-colors font-medium text-sm group"
                     >
                       <ExternalLink className="w-4 h-4 mr-2" />
-                      Visit
+                      {t('portfolio.visit')}
                     </a>
                   ) : (
                     <button
                       disabled
                       className="inline-flex items-center bg-gray-400 text-white px-4 py-2 rounded-lg cursor-not-allowed font-medium text-sm"
                     >
-                      Coming Soon
+                      {t('portfolio.comingSoon')}
                     </button>
                   )}
                 </div>
@@ -164,17 +165,16 @@ const PortfolioList: React.FC = () => {
           <div className="bg-white rounded-xl p-8 shadow-sm">
             <Target className="w-12 h-12 mx-auto mb-4 text-amber-500" />
             <h3 className="text-2xl font-semibold text-slate-800 mb-4">
-              Have a Project in Mind?
+              {t('portfolio.haveProject')}
             </h3>
             <p className="text-slate-600 mb-6 max-w-2xl mx-auto">
-              I'm always interested in collaborating on projects that create meaningful impact. 
-              Whether it's a technical challenge, a product idea, or just a conversation about building better software.
+              {t('portfolio.haveProjectDescription')}
             </p>
             <Link 
               to="/#connect"
               className="inline-flex items-center bg-amber-500 text-white px-6 py-3 rounded-lg hover:bg-amber-600 transition-colors font-medium"
             >
-              Let's Connect
+              {t('portfolio.letsConnect')}
               <ArrowRight className="w-4 h-4 ml-2" />
             </Link>
           </div>
@@ -186,7 +186,7 @@ const PortfolioList: React.FC = () => {
             to="/"
             className="inline-flex items-center text-slate-600 hover:text-amber-600 transition-colors"
           >
-            ← Back to Home
+            {t('common.backToHome')}
           </Link>
         </div>
       </div>

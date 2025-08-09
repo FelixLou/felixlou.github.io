@@ -105,16 +105,16 @@ const Home: React.FC = () => {
             </div>
             <div className="space-y-4">
               <div className="bg-gradient-to-r from-slate-50 to-blue-50 p-6 rounded-xl">
-                <h3 className="font-semibold text-slate-800 mb-2">Current Focus</h3>
-                <p className="text-slate-600">AI-powered software and high-value content</p>
+                <h3 className="font-semibold text-slate-800 mb-2">{t('home.about.currentFocus')}</h3>
+                <p className="text-slate-600">{t('home.about.currentFocusDesc')}</p>
               </div>
               <div className="bg-gradient-to-r from-slate-50 to-blue-50 p-6 rounded-xl">
-                <h3 className="font-semibold text-slate-800 mb-2">Experience</h3>
-                <p className="text-slate-600">10+ years in tech, 3+ years in leadership</p>
+                <h3 className="font-semibold text-slate-800 mb-2">{t('home.about.experience')}</h3>
+                <p className="text-slate-600">{t('home.about.experienceDesc')}</p>
               </div>
               <div className="bg-gradient-to-r from-slate-50 to-blue-50 p-6 rounded-xl">
-                <h3 className="font-semibold text-slate-800 mb-2">Passion</h3>
-                <p className="text-slate-600">Building inclusive, high-performing teams</p>
+                <h3 className="font-semibold text-slate-800 mb-2">{t('home.about.passionTitle')}</h3>
+                <p className="text-slate-600">{t('home.about.passionDesc')}</p>
               </div>
             </div>
           </div>
