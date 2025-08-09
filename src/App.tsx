@@ -6,7 +6,7 @@ import Home from './components/Home';
 import BlogList from './components/BlogList';
 import BlogPost from './components/BlogPost';
 import PortfolioList from './components/PortfolioList';
-import ProductLanding from './components/ProductLanding';
+
 import Books from './components/Books';
 
 function App() {
@@ -20,7 +20,6 @@ function App() {
             <Route path="/blog" element={<BlogList />} />
             <Route path="/blog/:id" element={<BlogPost />} />
             <Route path="/portfolio" element={<PortfolioList />} />
-            <Route path="/portfolio/:id" element={<ProductLanding />} />
             <Route path="/books" element={<Books />} />
           </Routes>
         </div>
