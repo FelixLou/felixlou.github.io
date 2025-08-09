@@ -1,0 +1,188 @@
+import React, { useState, useEffect } from 'react';
+import { Link, useParams } from 'react-router-dom';
+import { Calendar, Clock, ArrowLeft } from 'lucide-react';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
+import rehypeHighlight from 'rehype-highlight';
+import { getBlogPost, formatDate, type BlogPost as BlogPostType } from '../utils/blogUtils';
+
+const BlogPost: React.FC = () => {
+  const { id } = useParams<{ id: string }>();
+  const [post, setPost] = useState<BlogPostType | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(false);
+  
+  // Comment state
+  const [comments, setComments] = useState<Comment[]>([]);
+  const [newComment, setNewComment] = useState({
+    author: '',
+    email: '',
+    website: '',
+    content: ''
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  useEffect(() => {
+    async function loadPost() {
+      if (!id) {
+        setError(true);
+        setLoading(false);
+        return;
+      }
+
+      try {
+        const blogPost = await getBlogPost(id);
+        setPost(blogPost);
+        setError(!blogPost);
+      } catch (err) {
+        setError(true);
+        console.error('Error loading blog post:', err);
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    loadPost();
+  }, [id]);
+
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-white pt-32 pb-20">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <div className="animate-pulse">
+            <div className="h-8 bg-slate-200 rounded mb-4"></div>
+            <div className="h-12 bg-slate-200 rounded mb-8"></div>
+            <div className="space-y-4">
+              <div className="h-4 bg-slate-200 rounded"></div>
+              <div className="h-4 bg-slate-200 rounded"></div>
+              <div className="h-4 bg-slate-200 rounded w-3/4"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  if (error || !post) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 pt-32 pb-20">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <h1 className="text-4xl font-bold text-slate-800 mb-4">Post Not Found</h1>
+          <p className="text-slate-600 mb-8">The blog post you're looking for doesn't exist.</p>
+          <Link 
+            to="/blog" 
+            className="inline-flex items-center text-amber-600 hover:text-amber-700 font-medium"
+          >
+            <ArrowLeft className="w-4 h-4 mr-2" />
+            Back to Blog
+          </Link>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="min-h-screen bg-white pt-32 pb-20">
+      <article className="max-w-4xl mx-auto px-6">
+        {/* Back Navigation */}
+        <div className="mb-8">
+          <Link 
+            to="/blog" 
+            className="inline-flex items-center text-slate-600 hover:text-amber-600 transition-colors"
+          >
+            <ArrowLeft className="w-4 h-4 mr-2" />
+            Back to Blog
+          </Link>
+        </div>
+
+        {/* Article Header */}
+        <header className="mb-12">
+          <div className="flex items-center space-x-4 text-sm text-slate-500 mb-4">
+            <span className="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-xs font-medium">
+              {post.category}
+            </span>
+            <div className="flex items-center">
+              <Calendar className="w-4 h-4 mr-1" />
+              <span>{formatDate(post.date)}</span>
+            </div>
+            <div className="flex items-center">
+              <Clock className="w-4 h-4 mr-1" />
+              <span>{post.readTime}</span>
+            </div>
+          </div>
+          
+          <h1 className="text-4xl md:text-5xl font-bold text-slate-800 leading-tight">
+            {post.title}
+          </h1>
+        </header>
+
+        {/* Article Content */}
+        <div className="prose prose-lg prose-slate max-w-none
+                       prose-headings:text-slate-800 prose-headings:font-bold
+                       prose-p:text-slate-600 prose-p:leading-relaxed
+                       prose-ul:text-slate-600 prose-li:text-slate-600
+                       prose-a:text-amber-600 prose-a:no-underline hover:prose-a:text-amber-700
+                       prose-code:text-amber-600 prose-code:bg-amber-50 prose-code:px-1 prose-code:rounded
+                       prose-pre:bg-slate-50 prose-pre:border">
+          <ReactMarkdown
+            remarkPlugins={[remarkGfm]}
+            rehypePlugins={[rehypeHighlight]}
+          >
+            {post.content}
+          </ReactMarkdown>
+        </div>
+
+        {/* Author Note */}
+        <div className="mt-16 p-6 bg-gradient-to-r from-slate-50 to-blue-50 rounded-xl">
+          <div className="flex items-start space-x-4">
+            <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-white shadow-lg">
+              <img 
+                src="/profile.jpg" 
+                alt="Jiabin Lu Profile" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div>
+              <h3 className="font-semibold text-slate-800 mb-1">Jiabin Lu</h3>
+              <p className="text-slate-600 text-sm leading-relaxed">
+                Systems-minded builder who leverages software, content, and AI to create freedom. 
+                Passionate about the intersection of technology and humanity.
+              </p>
+              <div className="flex space-x-4 mt-3">
+                <a 
+                  href="https://www.linkedin.com/in/jiabinlu/" 
+                  className="text-amber-600 hover:text-amber-700 text-sm font-medium"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  LinkedIn
+                </a>
+                <a 
+                  href="https://x.com/jiabinlu123" 
+                  className="text-amber-600 hover:text-amber-700 text-sm font-medium"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  X.com
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Navigation */}
+        <div className="mt-12 text-center">
+          <Link 
+            to="/blog" 
+            className="inline-flex items-center bg-amber-500 text-white px-6 py-3 rounded-lg hover:bg-amber-600 transition-colors font-medium"
+          >
+            <ArrowLeft className="w-4 h-4 mr-2" />
+            Read More Articles
+          </Link>
+        </div>
+      </article>
+    </div>
+  );
+};
+
+export default BlogPost; 

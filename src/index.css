@@ -1,3 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Import syntax highlighting styles */
+@import './styles/highlight.css';
