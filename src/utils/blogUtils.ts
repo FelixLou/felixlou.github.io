@@ -24,7 +24,8 @@ export interface BlogPostMeta {
 // List of all blog post files (you'll need to update this when adding new posts)
 const BLOG_POST_FILES = [
   'dont-believe-what-you-think.md',
-  '自由意志.md'
+  '自由意志.md',
+  'website-journey.md'
 ];
 
 export async function getAllBlogPosts(): Promise<BlogPostMeta[]> {
