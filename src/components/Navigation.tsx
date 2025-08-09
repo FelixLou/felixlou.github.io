@@ -1,8 +1,11 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { useLanguage } from '../contexts/LanguageContext';
+import { Globe } from 'lucide-react';
 
 const Navigation: React.FC = () => {
   const location = useLocation();
+  const { language, setLanguage, t } = useLanguage();
   
   const isActive = (path: string) => {
     if (path === '/' && location.pathname === '/') return true;
@@ -23,23 +26,49 @@ const Navigation: React.FC = () => {
           <Link to="/" className="font-bold text-xl text-slate-800 hover:text-amber-600 transition-colors">
             Jiabin Lu
           </Link>
-          <div className="hidden md:flex space-x-8">
-            <Link to="/blog" className={linkClass('/blog')}>
-              Blog
-            </Link>
-            <a href="/#about" className={linkClass('/#about')}>
-              About
-            </a>
-            <a href="/#beliefs" className={linkClass('/#beliefs')}>
-              Beliefs
-            </a>
-            <a href="/#books" className={linkClass('/#books')}>
-              Books
-            </a>
-            <a href="/#connect" className={linkClass('/#connect')}>
-              Connect
-            </a>
-          </div>
+                                <div className="hidden md:flex items-center space-x-8">
+                        <Link to="/blog" className={linkClass('/blog')}>
+                          {t('nav.blog')}
+                        </Link>
+                        <Link to="/portfolio" className={linkClass('/portfolio')}>
+                          {t('nav.portfolio')}
+                        </Link>
+                        <a href="/#about" className={linkClass('/#about')}>
+                          {t('nav.about')}
+                        </a>
+                        <Link to="/books" className={linkClass('/books')}>
+                          {t('nav.books')}
+                        </Link>
+                        <a href="/#connect" className={linkClass('/#connect')}>
+                          {t('nav.connect')}
+                        </a>
+                        
+                        {/* Language Switcher */}
+                        <div className="relative group">
+                          <button className="flex items-center space-x-1 text-slate-600 hover:text-amber-600 transition-colors">
+                            <Globe className="w-4 h-4" />
+                            <span className="text-sm">{language === 'en' ? 'EN' : '中文'}</span>
+                          </button>
+                          <div className="absolute right-0 mt-2 w-32 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                            <button
+                              onClick={() => setLanguage('en')}
+                              className={`w-full text-left px-4 py-2 text-sm hover:bg-gray-50 rounded-t-lg ${
+                                language === 'en' ? 'text-amber-600 font-medium' : 'text-slate-700'
+                              }`}
+                            >
+                              {t('language.english')}
+                            </button>
+                            <button
+                              onClick={() => setLanguage('zh')}
+                              className={`w-full text-left px-4 py-2 text-sm hover:bg-gray-50 rounded-b-lg ${
+                                language === 'zh' ? 'text-amber-600 font-medium' : 'text-slate-700'
+                              }`}
+                            >
+                              {t('language.chinese')}
+                            </button>
+                          </div>
+                        </div>
+                      </div>
           
           {/* Mobile menu button - you can enhance this later */}
           <div className="md:hidden">
