@@ -6,6 +6,7 @@ import remarkGfm from 'remark-gfm';
 import rehypeHighlight from 'rehype-highlight';
 import { getBlogPost, formatDate, type BlogPost as BlogPostType } from '../utils/blogUtils';
 import { useLanguage } from '../contexts/LanguageContext';
+import BlogImage from './BlogImage';
 
 const BlogPost: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -129,6 +130,23 @@ const BlogPost: React.FC = () => {
           <ReactMarkdown
             remarkPlugins={[remarkGfm]}
             rehypePlugins={[rehypeHighlight]}
+            components={{
+              img: ({ src, alt, title, ...props }) => {
+                if (!src) return null;
+                
+                // Check if the image has a caption (title attribute)
+                const caption = title || '';
+                
+                return (
+                  <BlogImage
+                    src={src}
+                    alt={alt || ''}
+                    caption={caption}
+                    {...props}
+                  />
+                );
+              }
+            }}
           >
             {post.content}
           </ReactMarkdown>
