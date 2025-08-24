@@ -2,6 +2,8 @@
 
 ## Git Workflow
 - Do NOT automatically add files to git, commit, or push changes
+- Do NOT automatically add files to git, commit, or push changes
+- Do NOT automatically add files to git, commit, or push changes
 - Always ask the user before making any git operations
 - Let the user decide when and what to commit
 - Only perform git operations when explicitly requested by the user
