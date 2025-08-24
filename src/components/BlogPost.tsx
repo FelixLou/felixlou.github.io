@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { Calendar, Clock, ArrowLeft } from 'lucide-react';
+import { Calendar, Clock, ArrowLeft, ChevronLeft, ChevronRight } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import rehypeHighlight from 'rehype-highlight';
-import { getBlogPost, formatDate, type BlogPost as BlogPostType } from '../utils/blogUtils';
+import { getBlogPost, formatDate, getAdjacentPosts, type BlogPost as BlogPostType, type BlogPostMeta } from '../utils/blogUtils';
 import { useLanguage } from '../contexts/LanguageContext';
 import BlogImage from './BlogImage';
 
@@ -13,6 +13,7 @@ const BlogPost: React.FC = () => {
   const [post, setPost] = useState<BlogPostType | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
+  const [adjacentPosts, setAdjacentPosts] = useState<{ prev: BlogPostMeta | null; next: BlogPostMeta | null }>({ prev: null, next: null });
   const { t } = useLanguage();
   
   // Comment state
@@ -37,6 +38,11 @@ const BlogPost: React.FC = () => {
         const blogPost = await getBlogPost(id);
         setPost(blogPost);
         setError(!blogPost);
+        
+        if (blogPost) {
+          const adjacent = await getAdjacentPosts(id);
+          setAdjacentPosts(adjacent);
+        }
       } catch (err) {
         setError(true);
         console.error('Error loading blog post:', err);
@@ -190,7 +196,48 @@ const BlogPost: React.FC = () => {
           </div>
         </div>
 
-        {/* Navigation */}
+        {/* Post Navigation */}
+        <div className="mt-16 border-t pt-8">
+          <div className="flex justify-between items-start gap-4">
+            {/* Previous Post */}
+            {adjacentPosts.prev ? (
+              <Link
+                to={`/blog/${adjacentPosts.prev.id}`}
+                className="flex-1 group flex items-start space-x-3 p-4 rounded-lg hover:bg-slate-50 transition-colors"
+              >
+                <ChevronLeft className="w-5 h-5 text-slate-400 group-hover:text-amber-600 transition-colors mt-1 flex-shrink-0" />
+                <div className="flex-1">
+                  <p className="text-sm text-slate-500 mb-1">{t('blog.previousPost')}</p>
+                  <p className="font-medium text-slate-800 group-hover:text-amber-600 transition-colors line-clamp-2">
+                    {adjacentPosts.prev.title}
+                  </p>
+                </div>
+              </Link>
+            ) : (
+              <div className="flex-1"></div>
+            )}
+
+            {/* Next Post */}
+            {adjacentPosts.next ? (
+              <Link
+                to={`/blog/${adjacentPosts.next.id}`}
+                className="flex-1 group flex items-start space-x-3 p-4 rounded-lg hover:bg-slate-50 transition-colors text-right"
+              >
+                <div className="flex-1">
+                  <p className="text-sm text-slate-500 mb-1">{t('blog.nextPost')}</p>
+                  <p className="font-medium text-slate-800 group-hover:text-amber-600 transition-colors line-clamp-2">
+                    {adjacentPosts.next.title}
+                  </p>
+                </div>
+                <ChevronRight className="w-5 h-5 text-slate-400 group-hover:text-amber-600 transition-colors mt-1 flex-shrink-0" />
+              </Link>
+            ) : (
+              <div className="flex-1"></div>
+            )}
+          </div>
+        </div>
+
+        {/* Back to Blog */}
         <div className="mt-12 text-center">
           <Link 
             to="/blog" 

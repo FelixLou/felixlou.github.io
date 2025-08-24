@@ -74,6 +74,8 @@ export const zh = {
     author: {
       description: '系统化思维的构建者，通过软件、内容和AI创造自由。对技术与人文的交汇点充满热情。',
     },
+    previousPost: '上一篇',
+    nextPost: '下一篇',
   },
 
   // Portfolio

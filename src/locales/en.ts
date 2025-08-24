@@ -74,6 +74,8 @@ export const en = {
     author: {
       description: 'Systems-minded builder who leverages software, content, and AI to create freedom. Passionate about the intersection of technology and humanity.',
     },
+    previousPost: 'Previous',
+    nextPost: 'Next',
   },
 
   // Portfolio

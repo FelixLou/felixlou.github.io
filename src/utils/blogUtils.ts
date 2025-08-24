@@ -116,3 +116,23 @@ export function formatDate(dateString: string): string {
     day: 'numeric'
   });
 }
+
+export async function getAdjacentPosts(currentId: string): Promise<{ prev: BlogPostMeta | null; next: BlogPostMeta | null }> {
+  const allPosts = await getAllBlogPosts();
+  const publishedPosts = import.meta.env.MODE === 'production' 
+    ? getPublishedPosts(allPosts)
+    : allPosts;
+  
+  const sortedPosts = publishedPosts.sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
+  
+  const currentIndex = sortedPosts.findIndex(post => post.id === currentId);
+  
+  if (currentIndex === -1) {
+    return { prev: null, next: null };
+  }
+  
+  const prevPost = currentIndex > 0 ? sortedPosts[currentIndex - 1] : null;
+  const nextPost = currentIndex < sortedPosts.length - 1 ? sortedPosts[currentIndex + 1] : null;
+  
+  return { prev: prevPost, next: nextPost };
+}
