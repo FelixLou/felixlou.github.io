@@ -33,6 +33,7 @@ const BLOG_POST_FILES = [
   'southeast-asia-expenses.md',
   'guangzhou-travel.md',
   'bangkok-travel.md',
+  'malaysia-travel.md',
   'product-launch-journey.md',
   'southeast-asia-journey.md'
 ];
