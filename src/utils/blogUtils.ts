@@ -30,6 +30,7 @@ const BLOG_POST_FILES = [
   'hong-kong-travel.md',
   'shenzhen-travel.md',
   'hanoi-travel.md',
+  'singapore-travel.md',
   'southeast-asia-expenses.md',
   'guangzhou-travel.md',
   'bangkok-travel.md',
