@@ -23,9 +23,18 @@ export interface BlogPostMeta {
 
 // List of all blog post files (you'll need to update this when adding new posts)
 const BLOG_POST_FILES = [
+  'content-creation-tool.md',
   'dont-believe-what-you-think.md',
   '自由意志.md',
-  'website-journey.md'
+  'website-journey.md',
+  'hong-kong-travel.md',
+  'shenzhen-travel.md',
+  'hanoi-travel.md',
+  'southeast-asia-expenses.md',
+  'guangzhou-travel.md',
+  'bangkok-travel.md',
+  'product-launch-journey.md',
+  'southeast-asia-journey.md'
 ];
 
 export async function getAllBlogPosts(): Promise<BlogPostMeta[]> {

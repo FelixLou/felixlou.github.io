@@ -20,7 +20,7 @@ published: true
 - **样式体系**：Tailwind CSS — 原子化样式，提高迭代效率
 - **路由**：React Router — SPA 客户端路由
 
-![技术架构图](/images/blog/tech-stack.svg "现代Web开发技术栈：React + TypeScript + Vite + Tailwind CSS")
+![技术架构图](/images/blog/website-journey/tech-stack.svg "现代Web开发技术栈：React + TypeScript + Vite + Tailwind CSS")
 
 ### 部署流程
 
@@ -32,7 +32,7 @@ git push        # 推送触发 GitHub Pages 自动部署
 
 推送后几分钟内网站即可上线。
 
-![部署流程图](/images/blog/deployment-flow.svg "GitHub Pages自动部署流程：从代码提交到网站上线")
+![部署流程图](/images/blog/website-journey/deployment-flow.svg "GitHub Pages自动部署流程：从代码提交到网站上线")
 
 ## 网站核心内容与定位
 
