@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jiabin Lu's Blog</title>
+    <link>https://felixlou.github.io</link>
+    <description>Insights on building systems, leveraging technology, and creating meaningful impact through software, content, and AI.</description>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 25 Aug 2025 03:25:56 GMT</lastBuildDate>
+    <atom:link href="https://felixlou.github.io/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>从0到1：我的第一个小产品发布之旅</title>
+      <link>https://felixlou.github.io/blog/product-launch-journey</link>
+      <guid isPermaLink="true">https://felixlou.github.io/blog/product-launch-journey</guid>
+      <pubDate>Thu, 21 Aug 2025 00:00:00 GMT</pubDate>
+      <description>
+10天前发的产品内测的邀请贴，终于到了敢拿出来给大家用的程度。...</description>
+      <category>General</category>
+    </item>
+    <item>
+      <title>创作卡在第一步？这个浏览器插件帮你自动整理一周灵感</title>
+      <link>https://felixlou.github.io/blog/content-creation-tool</link>
+      <guid isPermaLink="true">https://felixlou.github.io/blog/content-creation-tool</guid>
+      <pubDate>Sun, 10 Aug 2025 00:00:00 GMT</pubDate>
+      <description>
+ 创作困境：从哪开始写？...</description>
+      <category>产品开发</category>
+    </item>
+    <item>
+      <title>我用一个方法，把好奇心的焦虑放下了</title>
+      <link>https://felixlou.github.io/blog/dont-believe-what-you-think</link>
+      <guid isPermaLink="true">https://felixlou.github.io/blog/dont-believe-what-you-think</guid>
+      <pubDate>Sat, 09 Aug 2025 00:00:00 GMT</pubDate>
+      <description>放下，才是我破解诅咒的真正方法</description>
+      <category>感悟</category>
+    </item>
+    <item>
+      <title>从域名到架构：我的个人网站现状与经验</title>
+      <link>https://felixlou.github.io/blog/website-journey</link>
+      <guid isPermaLink="true">https://felixlou.github.io/blog/website-journey</guid>
+      <pubDate>Sat, 09 Aug 2025 00:00:00 GMT</pubDate>
+      <description>
+ 域名与托管...</description>
+      <category>General</category>
+    </item>
+    <item>
+      <title>AI会有意识吗？没有自由意志的我们，该如何规划人生？</title>
+      <link>https://felixlou.github.io/blog/自由意志</link>
+      <guid isPermaLink="true">https://felixlou.github.io/blog/自由意志</guid>
+      <pubDate>Mon, 04 Aug 2025 00:00:00 GMT</pubDate>
+      <description>我们没有自由意志，这是好事</description>
+      <category>感悟, AI</category>
+    </item>
+    <item>
+      <title>旅行花费总结：26577元的东南亚人生暂停键</title>
+      <link>https://felixlou.github.io/blog/southeast-asia-expenses</link>
+      <guid isPermaLink="true">https://felixlou.github.io/blog/southeast-asia-expenses</guid>
+      <pubDate>Wed, 30 Jul 2025 00:00:00 GMT</pubDate>
+      <description>这趟旅行花了3,715美元，两周的时间，七座城市，五个国家。赚了走出节奏、拓宽视野、骑着摩托穿过胡同、在人家的客厅吃饭。</description>
+      <category>旅行</category>
+    </item>
+    <item>
+      <title>新加坡 - 全球最严城市背后，是花园与lah的温柔</title>
+      <link>https://felixlou.github.io/blog/singapore-travel</link>
+      <guid isPermaLink="true">https://felixlou.github.io/blog/singapore-travel</guid>
+      <pubDate>Sat, 26 Jul 2025 00:00:00 GMT</pubDate>
+      <description>新加坡是一种治理型城市的极致表现：它没有天赋的资源，却靠规则与秩序实现了现代奇迹。这是一场关于高效 vs 自由、纪律 vs 创造力的思想实验室。</description>
+      <category>旅行</category>
+    </item>
+    <item>
+      <title>马来西亚：多雨多语多神灵，在雨林与清真寺之间穿行</title>
+      <link>https://felixlou.github.io/blog/malaysia-travel</link>
+      <guid isPermaLink="true">https://felixlou.github.io/blog/malaysia-travel</guid>
+      <pubDate>Thu, 24 Jul 2025 00:00:00 GMT</pubDate>
+      <description>这是我第一次踏入一个穆斯林国家。走进清真寺那一刻，我意识到：宗教并不只是信仰，它是一种社会秩序、一种心理结构，也是一种让人安静下来的生活节奏。</description>
+      <category>旅行</category>
+    </item>
+    <item>
+      <title>曼谷：八肢之术与微笑佛国，在热浪与香料中穿行</title>
+      <link>https://felixlou.github.io/blog/bangkok-travel</link>
+      <guid isPermaLink="true">https://felixlou.github.io/blog/bangkok-travel</guid>
+      <pubDate>Wed, 23 Jul 2025 00:00:00 GMT</pubDate>
+      <description>曼谷所在的泰国，是东南亚地理中心国家，国土呈&apos;斜T字形&apos;分布。它是东南亚唯一一个没被西方殖民的国家，由泰族南迁建立的素可泰、大城、曼谷王朝接力传承。</description>
+      <category>旅行</category>
+    </item>
+    <item>
+      <title>河内：摩托、闷热与记忆残响中的城市</title>
+      <link>https://felixlou.github.io/blog/hanoi-travel</link>
+      <guid isPermaLink="true">https://felixlou.github.io/blog/hanoi-travel</guid>
+      <pubDate>Mon, 21 Jul 2025 00:00:00 GMT</pubDate>
+      <description>河内，是一部正在续写的旧小说。它没有香港的锋利、深圳的快节奏、广州的悠然，也没有新加坡的效率模板。但它是一座活着的城市。</description>
+      <category>旅行</category>
+    </item>
+    <item>
+      <title>广州：一座喝早茶长大的城市，时间在这儿流得慢一点</title>
+      <link>https://felixlou.github.io/blog/guangzhou-travel</link>
+      <guid isPermaLink="true">https://felixlou.github.io/blog/guangzhou-travel</guid>
+      <pubDate>Sat, 19 Jul 2025 00:00:00 GMT</pubDate>
+      <description>广州地处珠江三角洲北缘，是中国南方最重要的城市之一。早在秦朝就设为&apos;南海郡&apos;，至今已有2200多年建城史。作为岭南文化的发源地，它既是中原王朝南拓的终点，也是海上丝绸之路的起点。</description>
+      <category>旅行</category>
+    </item>
+    <item>
+      <title>深圳：从小渔村到科技森林，在钢筋水泥中追风逐电</title>
+      <link>https://felixlou.github.io/blog/shenzhen-travel</link>
+      <guid isPermaLink="true">https://felixlou.github.io/blog/shenzhen-travel</guid>
+      <pubDate>Wed, 16 Jul 2025 00:00:00 GMT</pubDate>
+      <description>深圳像一个不断迭代的开源城市：没有最终版本，没有古老神话，也没有谁是原住民。它的活力源于所有代码贡献者。</description>
+      <category>旅行</category>
+    </item>
+    <item>
+      <title>香港：山海之间的摩天城市，一次热雨交加的现代穿越</title>
+      <link>https://felixlou.github.io/blog/hong-kong-travel</link>
+      <guid isPermaLink="true">https://felixlou.github.io/blog/hong-kong-travel</guid>
+      <pubDate>Mon, 14 Jul 2025 00:00:00 GMT</pubDate>
+      <description>香港像是一座夹在多重系统之间的城市：英式殖民传统与中式社会现实、西式金融秩序与东方式人情逻辑、发达国家的物价与发展中国家的劳工结构……</description>
+      <category>旅行</category>
+    </item>
+    <item>
+      <title>东南亚两周行：一个人的文化探索之旅</title>
+      <link>https://felixlou.github.io/blog/southeast-asia-journey</link>
+      <guid isPermaLink="true">https://felixlou.github.io/blog/southeast-asia-journey</guid>
+      <pubDate>Thu, 10 Jul 2025 00:00:00 GMT</pubDate>
+      <description>想去东南亚旅行很久了，终于在忙碌中&apos;偷&apos;出两周时间成行。这趟旅程，我每天步数在 15,000 到 25,000 之间，用脚丈量七座城市，在有限时间内快速领略多元文化、历史与人情。</description>
+      <category>旅行</category>
+    </item>
+  </channel>
+</rss>

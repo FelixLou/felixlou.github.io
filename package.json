@@ -5,10 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && npm run copy-blog-posts",
+    "build": "vite build && npm run generate:rss && npm run copy-blog-posts",
     "copy-blog-posts": "cp -r public/blog-posts docs/ && cp -r public/images docs/ && touch docs/.nojekyll",
+    "generate:rss": "node scripts/generate-rss.js",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "publish:medium": "node scripts/publish-to-medium.js"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.16",

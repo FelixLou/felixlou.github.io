@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Calendar, ChevronRight } from 'lucide-react';
+import { Calendar, ChevronRight, Rss } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { getAllBlogPosts, getPublishedPosts, formatDate, type BlogPostMeta } from '../utils/blogUtils';
 import { useLanguage } from '../contexts/LanguageContext';
@@ -64,6 +64,19 @@ const BlogList: React.FC = () => {
           <p className="text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
             {t('blog.subtitle')}
           </p>
+          {/* RSS Feed Link */}
+          <div className="mt-6">
+            <a
+              href="/rss.xml"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-amber-600 hover:text-amber-700 transition-colors"
+              title="Subscribe to RSS Feed"
+            >
+              <Rss className="w-5 h-5" />
+              <span className="font-medium">RSS Feed</span>
+            </a>
+          </div>
         </div>
 
         {/* Blog Posts Grid */}
