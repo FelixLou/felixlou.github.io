@@ -36,7 +36,8 @@ const BLOG_POST_FILES = [
   'bangkok-travel.md',
   'malaysia-travel.md',
   'product-launch-journey.md',
-  'southeast-asia-journey.md'
+  'southeast-asia-journey.md',
+  'cross-cultural-parenting.md'
 ];
 
 export async function getAllBlogPosts(): Promise<BlogPostMeta[]> {
