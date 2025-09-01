@@ -1,4 +1,5 @@
 import matter from 'gray-matter';
+import { BLOG_POST_FILES } from '../config/blogPosts';
 
 export interface BlogPost {
   id: string;
@@ -20,26 +21,6 @@ export interface BlogPostMeta {
   excerpt: string;
   published: boolean;
 }
-
-// List of all blog post files (you'll need to update this when adding new posts)
-const BLOG_POST_FILES = [
-  'content-creation-tool.md',
-  'dont-believe-what-you-think.md',
-  '自由意志.md',
-  'website-journey.md',
-  'hong-kong-travel.md',
-  'shenzhen-travel.md',
-  'hanoi-travel.md',
-  'singapore-travel.md',
-  'southeast-asia-expenses.md',
-  'guangzhou-travel.md',
-  'bangkok-travel.md',
-  'malaysia-travel.md',
-  'product-launch-journey.md',
-  'southeast-asia-journey.md',
-  'cross-cultural-parenting.md',
-  'chenglu-interview.md'
-];
 
 export async function getAllBlogPosts(): Promise<BlogPostMeta[]> {
   const posts: BlogPostMeta[] = [];

@@ -4,33 +4,16 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import { fileURLToPath } from 'url';
+import { BLOG_POST_FILES } from '../src/config/blogPosts.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Configuration
-const SITE_URL = 'https://felixlou.github.io';
+const SITE_URL = 'https://www.jiabinlu.com';
 const BLOG_POSTS_DIR = path.join(__dirname, '..', 'public', 'blog-posts');
 const OUTPUT_DIR = path.join(__dirname, '..', 'public');
 const RSS_FILE = 'rss.xml';
-
-// List of blog post files (same as in blogUtils.ts)
-const BLOG_POST_FILES = [
-  'content-creation-tool.md',
-  'dont-believe-what-you-think.md',
-  '自由意志.md',
-  'website-journey.md',
-  'hong-kong-travel.md',
-  'shenzhen-travel.md',
-  'hanoi-travel.md',
-  'singapore-travel.md',
-  'southeast-asia-expenses.md',
-  'guangzhou-travel.md',
-  'bangkok-travel.md',
-  'malaysia-travel.md',
-  'product-launch-journey.md',
-  'southeast-asia-journey.md'
-];
 
 function escapeXml(text) {
   if (!text) return '';
