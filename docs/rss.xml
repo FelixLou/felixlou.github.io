@@ -5,17 +5,8 @@
     <link>https://felixlou.github.io</link>
     <description>Insights on building systems, leveraging technology, and creating meaningful impact through software, content, and AI.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 31 Aug 2025 01:53:25 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 01 Sep 2025 06:03:00 GMT</lastBuildDate>
     <atom:link href="https://felixlou.github.io/rss.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>从0到1：我的第一个小产品发布之旅</title>
-      <link>https://felixlou.github.io/blog/product-launch-journey</link>
-      <guid isPermaLink="true">https://felixlou.github.io/blog/product-launch-journey</guid>
-      <pubDate>Thu, 21 Aug 2025 00:00:00 GMT</pubDate>
-      <description>
-10天前发的产品内测的邀请贴，终于到了敢拿出来给大家用的程度。...</description>
-      <category>General</category>
-    </item>
     <item>
       <title>创作卡在第一步？这个浏览器插件帮你自动整理一周灵感</title>
       <link>https://felixlou.github.io/blog/content-creation-tool</link>
@@ -121,6 +112,15 @@
       <pubDate>Thu, 10 Jul 2025 00:00:00 GMT</pubDate>
       <description>想去东南亚旅行很久了，终于在忙碌中&apos;偷&apos;出两周时间成行。这趟旅程，我每天步数在 15,000 到 25,000 之间，用脚丈量七座城市，在有限时间内快速领略多元文化、历史与人情。</description>
       <category>旅行</category>
+    </item>
+    <item>
+      <title>从0到1：我的第一个小产品发布之旅</title>
+      <link>https://felixlou.github.io/blog/product-launch-journey</link>
+      <guid isPermaLink="true">https://felixlou.github.io/blog/product-launch-journey</guid>
+      <pubDate>Tue, 28 Jan 2025 00:00:00 GMT</pubDate>
+      <description>
+10天前发的产品内测的邀请贴，终于到了敢拿出来给大家用的程度。...</description>
+      <category>General</category>
     </item>
   </channel>
 </rss>
