@@ -48,11 +48,11 @@ category: "产品开发"
 - **按主题分类**（AI 分析你都看了什么）
 - **AI 生成摘要**（直接变成可用的创作起点）
 
-![浏览器历史总结插件界面](/images/blog/browser-history-summarier-extension.png "浏览器插件主界面：一键生成本周浏览内容总结")
+![浏览器历史总结插件界面](/images/blog/browser-extension/browser-history-summarier-extension.png "浏览器插件主界面：一键生成本周浏览内容总结")
 
 最大的不同是：**你不需要手动收藏、做笔记，只要平时正常上网，它就会自动帮你收集+整理。**
 
-![插件设置页面](/images/blog/browser-history-summarier-extension-setting-page.png "插件设置页面：可自定义时间范围、过滤条件和分类方式")
+![插件设置页面](/images/blog/browser-extension/browser-history-summarier-extension-setting-page.png "插件设置页面：可自定义时间范围、过滤条件和分类方式")
 
 ## 使用场景
 
