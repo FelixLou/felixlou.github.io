@@ -1,4 +1,5 @@
 export const BLOG_POST_FILES = [
+  'wyoming-llc-trap.md',
   'content-creation-tool.md',
   'dont-believe-what-you-think.md',
   '自由意志.md',
