@@ -1,15 +1,13 @@
 ---
 title: "Wyoming LLC 注册踩坑记：为什么我最终选择解散公司"
-date: "2025-01-20"
+date: "2025-09-07"
 author: "Jiabin Lu"
-description: "分享我在 Wyoming 注册 LLC 的踩坑经历，揭示异地注册的真实成本和税务陷阱，帮助创业者避免同样的错误。"
+description: "我解散了我的 Wyoming 公司：一个加州程序员的教训"
 tags: ["创业", "LLC", "税务", "副业", "美国公司注册"]
 published: true
 readTime: "10 min read"
 category: "创业经验"
 ---
-
-## 副业梦想与注册冲动
 
 今年年初，我想做点副业。那时觉得成立一个公司能隔离风险，于是就在网上搜资料。搜索结果里到处都是推荐在 Wyoming（怀俄明州） 注册 LLC：手续简单、费用便宜、不用交企业税、隐私保护强。看起来很美好，于是我在 LegalZoom 上稀里糊涂注册了一个 Wyoming LLC，还顺便开了银行账户。
 
