@@ -15,7 +15,7 @@ published: true
 
 分布式系统工程师，大厂和中小厂工作经历；之前上架过一个iOS 小app， 没有任何GTM，大概几百个用户下载。
 
-![产品架构图](/images/blog/content-creation-tool/contentSeed-architecture-diagram.png "Chrome扩展与落地页系统架构：包含前端界面、后端API、认证系统、支付集成等完整技术栈")
+![产品架构图](/images/blog/contentSeed-architecture-diagram.png "Chrome扩展与落地页系统架构：包含前端界面、后端API、认证系统、支付集成等完整技术栈")
 
 ## 1. Over-engineering 的陷阱
 
